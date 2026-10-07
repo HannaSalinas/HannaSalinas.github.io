@@ -52,7 +52,6 @@ async function loadLanguage(lang) {
     
     // Fallback to default language if available
     if (lang !== CONFIG.defaultLanguage) {
-      console.log('Falling back to default language');
       loadLanguage(CONFIG.defaultLanguage);
     }
   } finally {
@@ -76,6 +75,14 @@ function updateTranslations() {
       console.warn(`Translation not found for key: ${key}`);
     }
   });
+
+  // Etiquetas accesibles (aria-label) traducidas
+  document.querySelectorAll('[data-i18n-aria]').forEach(element => {
+    const translation = getNestedTranslation(element.getAttribute('data-i18n-aria'));
+    if (translation) element.setAttribute('aria-label', translation);
+  });
+
+  updateNavToggleLabel();
 }
 
 /**
@@ -212,6 +219,49 @@ class Modal {
 }
 
 // ==========================================
+// MOBILE NAVIGATION
+// ==========================================
+function isNavOpen() {
+  return document.getElementById('navLinks')?.classList.contains('open') ?? false;
+}
+
+function updateNavToggleLabel() {
+  const toggle = document.getElementById('navToggle');
+  if (!toggle) return;
+  const key = isNavOpen() ? 'nav.menu_close' : 'nav.menu_open';
+  const label = getNestedTranslation(key);
+  if (label) toggle.setAttribute('aria-label', label);
+}
+
+function setNavOpen(open) {
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  if (!toggle || !links) return;
+  links.classList.toggle('open', open);
+  toggle.setAttribute('aria-expanded', String(open));
+  updateNavToggleLabel();
+}
+
+function initMobileNav() {
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  if (!toggle || !links) return;
+
+  toggle.addEventListener('click', () => setNavOpen(!isNavOpen()));
+
+  // Cerrar al elegir una sección o con Escape
+  links.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => setNavOpen(false));
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isNavOpen()) {
+      setNavOpen(false);
+      toggle.focus();
+    }
+  });
+}
+
+// ==========================================
 // SMOOTH SCROLL
 // ==========================================
 function initSmoothScroll() {
@@ -251,10 +301,10 @@ function initNavbarScroll() {
   let lastScroll = 0;
   
   window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+    const currentScroll = window.scrollY;
     
-    // Hide navbar on scroll down, show on scroll up
-    if (currentScroll > lastScroll && currentScroll > 100) {
+    // Hide navbar on scroll down, show on scroll up (never while the mobile menu is open)
+    if (currentScroll > lastScroll && currentScroll > 100 && !isNavOpen()) {
       nav.style.transform = 'translateY(-100%)';
     } else {
       nav.style.transform = 'translateY(0)';
@@ -334,6 +384,7 @@ function init() {
   }
   
   // Initialize features
+  initMobileNav();
   initSmoothScroll();
   initNavbarScroll();
   initScrollAnimations();
@@ -355,9 +406,8 @@ function highlightActiveNavLink() {
     
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
       
-      if (pageYOffset >= sectionTop - 200) {
+      if (window.scrollY >= sectionTop - 200) {
         current = section.getAttribute('id');
       }
     });
@@ -369,22 +419,6 @@ function highlightActiveNavLink() {
       }
     });
   });
-}
-
-// ==========================================
-// PERFORMANCE OPTIMIZATION
-// ==========================================
-// Debounce function for scroll events
-function debounce(func, wait) {
-  let timeout;
-  return function executedFunction(...args) {
-    const later = () => {
-      clearTimeout(timeout);
-      func(...args);
-    };
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  };
 }
 
 // ==========================================
@@ -456,7 +490,3 @@ document.addEventListener('DOMContentLoaded', () => {
     card.style.animationDelay = `${index * 0.1}s`;
   });
 });
-
-
-
-  

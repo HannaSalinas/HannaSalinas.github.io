@@ -3,40 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hanna Salinas — Software Developer especializada en Java, Node.js, React y SQL. Proyectos reales en GitHub. Buscando primer rol junior remoto.">
-  <meta name="keywords" content="software developer, java developer, node.js, react, full-stack, backend, colombia, junior developer, remote, portfolio">
+  <meta name="description" content="Hanna Salinas — Desarrolladora de software enfocada en backend e ingeniería de datos: Databricks, PySpark, SQL Server, MongoDB, Java y React. Proyectos documentados en GitHub.">
   <meta name="author" content="Hanna Jineth Contreras Salinas">
-  
-  <title>Hanna Salinas | Software Engineer Portfolio</title>
+  <meta name="theme-color" content="#0a0a0a">
+
+  <title>Hanna Salinas | Desarrolladora de software · Backend y datos</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / vista previa al compartir -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hannasalinas.github.io/">
+  <meta property="og:title" content="Hanna Salinas · Desarrolladora de software · Backend y datos">
+  <meta property="og:description" content="Proyectos de ingeniería de datos, bases de datos y desarrollo web: lakehouse en Databricks, data warehouse en SQL Server y un mapa 3D de Colombia.">
+  <meta property="og:image" content="https://hannasalinas.github.io/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Hanna Salinas, desarrolladora de software · Backend y datos">
+  <meta property="og:locale" content="es_CO">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- Skip to main content for accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link" data-i18n="nav.skip">Saltar al contenido</a>
 
   <!-- Navigation -->
-  <nav class="main-nav" aria-label="Main navigation">
+  <nav class="main-nav" aria-label="Navegación principal">
     <div class="nav-container">
       <a href="#home" class="logo" data-i18n="nav.logo">HS</a>
-      <ul class="nav-links">
-        <li><a href="#about" data-i18n="nav.about">About</a></li>
-        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
-        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
       </ul>
-      <div class="lang-switch" role="group" aria-label="Language selector">
-        <button id="btn-es" class="lang-btn active" aria-label="Change to Spanish">ES</button>
-        <button id="btn-en" class="lang-btn" aria-label="Change to English">EN</button>
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button id="btn-es" class="lang-btn active" lang="es" aria-label="ES · Español">ES</button>
+        <button id="btn-en" class="lang-btn" lang="en" aria-label="EN · English">EN</button>
       </div>
     </div>
   </nav>
@@ -45,18 +65,19 @@
   <header id="home" class="hero">
     <div class="hero-content">
       <div class="hero-text">
-        <p class="hero-greeting" data-i18n="hero.greeting">Hello, I'm</p>
+        <p class="hero-greeting" data-i18n="hero.greeting">Hola, soy</p>
         <h1 class="hero-name" data-i18n="hero.name">Hanna Jineth Contreras Salinas</h1>
-        <p class="hero-title" data-i18n="hero.title">Software Engineer</p>
-        <p class="hero-subtitle" data-i18n="hero.subtitle">Passionate about building scalable solutions and crafting elegant code. Specialized in full-stack development with a focus on modern web technologies and data-driven systems.</p>
+        <p class="hero-title" data-i18n="hero.title">Desarrolladora de software · Backend y datos</p>
+        <p class="hero-subtitle" data-i18n="hero.subtitle"></p>
+        <p class="hero-availability" data-i18n="hero.availability">Disponible · Remoto, Colombia</p>
         <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary" data-i18n="hero.cta_contact">Get in Touch</a>
-          <a href="#projects" class="btn btn-secondary" data-i18n="hero.cta_projects">View Projects</a>
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.cta_projects">Ver proyectos</a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta_contact">Contáctame</a>
         </div>
       </div>
       <div class="hero-image">
         <div class="image-wrapper">
-          <img src="assets/images/perfil.jpg" alt="Hanna Contreras - Software Engineer" loading="lazy">
+          <img src="assets/images/perfil.webp" alt="Foto de Hanna Salinas" width="320" height="320" fetchpriority="high">
         </div>
       </div>
     </div>
@@ -67,26 +88,32 @@
     <!-- About Section -->
     <section id="about" class="section about-section">
       <div class="container">
-        <h2 class="section-title" data-i18n="about.title">About Me</h2>
+        <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
         <div class="about-content">
           <p class="about-text" data-i18n="about.text"></p>
 
           <div class="about-highlights">
             <div class="highlight-item">
-              <span class="highlight-icon">🎓</span>
-              <h3 data-i18n="about.education.title">Education</h3>
+              <span class="highlight-icon" aria-hidden="true">💼</span>
+              <h3 data-i18n="about.experience.title">Experiencia</h3>
+              <p data-i18n="about.experience.text"></p>
+            </div>
+
+            <div class="highlight-item">
+              <span class="highlight-icon" aria-hidden="true">🎓</span>
+              <h3 data-i18n="about.education.title">Formación</h3>
               <p data-i18n="about.education.text"></p>
             </div>
 
             <div class="highlight-item">
-              <span class="highlight-icon">💡</span>
-              <h3 data-i18n="about.focus.title">Focus Areas</h3>
+              <span class="highlight-icon" aria-hidden="true">💡</span>
+              <h3 data-i18n="about.focus.title">Áreas de enfoque</h3>
               <p data-i18n="about.focus.text"></p>
             </div>
 
             <div class="highlight-item">
-              <span class="highlight-icon">🚀</span>
-              <h3 data-i18n="about.approach.title">Approach</h3>
+              <span class="highlight-icon" aria-hidden="true">🚀</span>
+              <h3 data-i18n="about.approach.title">Diferencial</h3>
               <p data-i18n="about.approach.text"></p>
             </div>
           </div>
@@ -97,49 +124,53 @@
     <!-- Skills Section -->
     <section id="skills" class="section skills-section">
       <div class="container">
-        <h2 class="section-title" data-i18n="skills.title">Technical Skills</h2>
+        <h2 class="section-title" data-i18n="skills.title">Habilidades técnicas</h2>
         <div class="skills-grid">
           <article class="skill-card">
-            <div class="skill-icon">💻</div>
-            <h3 data-i18n="skills.languages.title">Programming Languages</h3>
+            <div class="skill-icon" aria-hidden="true">💻</div>
+            <h3 data-i18n="skills.languages.title">Lenguajes</h3>
             <ul class="skill-list">
-              <li>JavaScript</li>
               <li>Python</li>
+              <li>SQL (T-SQL)</li>
               <li>Java</li>
-              <li>SQL</li>
-              <li>HTML5 & CSS3</li>
+              <li>JavaScript</li>
+              <li>HTML5 · CSS3</li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <div class="skill-icon">🛠️</div>
-            <h3 data-i18n="skills.tools.title">Tools & Technologies</h3>
+            <div class="skill-icon" aria-hidden="true">🗄️</div>
+            <h3 data-i18n="skills.data.title">Datos</h3>
             <ul class="skill-list">
-              <li>Node.js · NestJS · Express</li>
-              <li>React · Three.js · Vite</li>
-              <li>Git & GitHub · Docker</li>
-              <li>MySQL · SQL Server · MongoDB</li>
-              <li>Linux · VS Code</li>
+              <li>Databricks · PySpark · Delta Lake</li>
+              <li>SQL Server · MySQL · MongoDB</li>
+              <li data-i18n="skills.data.modeling">ETL · Modelo estrella · SCD Tipo 2</li>
+              <li>Pandas · NumPy · Scikit-learn</li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <div class="skill-icon">🎯</div>
-            <h3 data-i18n="skills.expertise.title">Core Expertise</h3>
+            <div class="skill-icon" aria-hidden="true">🛠️</div>
+            <h3 data-i18n="skills.tools.title">Desarrollo y herramientas</h3>
             <ul class="skill-list">
-              <li data-i18n="skills.expertise.fullstack">Full-Stack Development</li>
-              <li data-i18n="skills.expertise.database">Database Design</li>
-              <li data-i18n="skills.expertise.oop">Object-Oriented Programming</li>
-              <li data-i18n="skills.expertise.web">Web Applications</li>
+              <li>React · Three.js · Vite · Node.js</li>
+              <li>Git · GitHub Actions</li>
+              <li>Docker · Linux</li>
+              <li>Maven · JUnit 5</li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <div class="skill-icon">🌍</div>
-            <h3 data-i18n="skills.languages_spoken.title">Languages</h3>
+            <div class="skill-icon" aria-hidden="true">🌍</div>
+            <h3 data-i18n="skills.languages_spoken.title">Idiomas</h3>
             <ul class="skill-list">
-              <li data-i18n="skills.languages_spoken.spanish">Spanish (Native)</li>
-              <li data-i18n="skills.languages_spoken.english">English (Intermediate)</li>
+              <li data-i18n="skills.languages_spoken.spanish">Español (nativo)</li>
+              <li data-i18n="skills.languages_spoken.english">Inglés (B1–B2)</li>
+            </ul>
+            <h3 class="skill-subtitle" data-i18n="skills.learning.title">Aprendiendo</h3>
+            <ul class="skill-list">
+              <li>TypeScript · NestJS · PostgreSQL</li>
+              <li>Next.js · TailwindCSS</li>
             </ul>
           </article>
         </div>
@@ -149,169 +180,169 @@
     <!-- Projects Section -->
     <section id="projects" class="section projects-section">
       <div class="container">
-        <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
+        <h2 class="section-title" data-i18n="projects.title">Proyectos destacados</h2>
 
         <!-- Project Filters -->
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all" data-i18n="projects.filters.all">All</button>
-          <button class="filter-btn" data-filter="data" data-i18n="projects.filters.data">Data & Databases</button>
-          <button class="filter-btn" data-filter="backend" data-i18n="projects.filters.backend">Backend & OOP</button>
-          <button class="filter-btn" data-filter="datascience" data-i18n="projects.filters.datascience">Data Science</button>
-          <button class="filter-btn" data-filter="fullstack" data-i18n="projects.filters.fullstack">Full-Stack</button>
+        <div class="project-filters" role="group" aria-label="Filtrar proyectos">
+          <button class="filter-btn active" data-filter="all" data-i18n="projects.filters.all">Todos</button>
+          <button class="filter-btn" data-filter="data" data-i18n="projects.filters.data">Datos</button>
+          <button class="filter-btn" data-filter="web" data-i18n="projects.filters.web">Web</button>
+          <button class="filter-btn" data-filter="backend" data-i18n="projects.filters.backend">Backend y POO</button>
+          <button class="filter-btn" data-filter="analysis" data-i18n="projects.filters.analysis">Análisis</button>
         </div>
 
         <div class="projects-grid">
 
-          <!-- BI TALENTCORP — FEATURED -->
-          <article class="project-card project-featured" data-category="data">
+          <!-- TERRALL -->
+          <article class="project-card project-featured" data-category="web">
+            <img class="project-image project-image--dark" src="assets/images/proyectos/terrall.webp" alt="Mapa 3D de Colombia con los departamentos en relieve y las principales ciudades" width="800" height="720" loading="lazy">
             <div class="project-header">
-              <h3 data-i18n="projects.talentcorp.title"></h3>
-              <span class="project-tag" data-i18n="projects.talentcorp.tag"></span>
+              <h3 data-i18n="projects.terrall.title">Terrall</h3>
+              <span class="project-tag project-tag-progress" data-i18n="projects.terrall.tag">En desarrollo</span>
             </div>
+            <p class="project-description" data-i18n="projects.terrall.description"></p>
+            <dl class="project-meta">
+              <dt data-i18n="projects.labels.problem">Problema</dt>
+              <dd data-i18n="projects.terrall.problem"></dd>
+              <dt data-i18n="projects.labels.role">Mi rol</dt>
+              <dd data-i18n="projects.terrall.role"></dd>
+            </dl>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Three.js</span>
+              <span class="tech-tag">d3-geo</span>
+              <span class="tech-tag">Vite</span>
+              <span class="tech-tag">GitHub Actions</span>
+            </div>
+            <div class="project-links">
+              <a href="https://hannasalinas.github.io/terrall/" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.links.demo">Ver demo →</a>
+              <a href="https://github.com/HannaSalinas/terrall" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.links.repo">Ver repositorio →</a>
+            </div>
+          </article>
 
+          <!-- WANDERBRICKS -->
+          <article class="project-card" data-category="data">
+            <img class="project-image" src="assets/images/proyectos/wanderbricks.webp" alt="Diagrama de la arquitectura del pipeline: fuentes, ingesta, almacenamiento, procesamiento y consumo" width="800" height="348" loading="lazy">
+            <div class="project-header">
+              <h3 data-i18n="projects.wanderbricks.title">Wanderbricks Lakehouse</h3>
+              <span class="project-tag" data-i18n="projects.wanderbricks.tag">Proyecto en equipo</span>
+            </div>
+            <p class="project-description" data-i18n="projects.wanderbricks.description"></p>
+            <dl class="project-meta">
+              <dt data-i18n="projects.labels.problem">Problema</dt>
+              <dd data-i18n="projects.wanderbricks.problem"></dd>
+              <dt data-i18n="projects.labels.role">Mi rol</dt>
+              <dd data-i18n="projects.wanderbricks.role"></dd>
+            </dl>
+            <div class="project-tech">
+              <span class="tech-tag">Databricks</span>
+              <span class="tech-tag">PySpark</span>
+              <span class="tech-tag">Delta Lake</span>
+              <span class="tech-tag">Unity Catalog</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/HannaSalinas/wanderbricks-lakehouse-databricks" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.links.repo">Ver repositorio →</a>
+            </div>
+          </article>
+
+          <!-- TALENTCORP -->
+          <article class="project-card" data-category="data">
+            <img class="project-image" src="assets/images/proyectos/talentcorp.webp" alt="Diagrama entidad-relación de la base de datos operacional de recursos humanos" width="800" height="587" loading="lazy">
+            <div class="project-header">
+              <h3 data-i18n="projects.talentcorp.title">TalentCorp HR Data Warehouse</h3>
+              <span class="project-tag" data-i18n="projects.talentcorp.tag">Business Intelligence</span>
+            </div>
             <p class="project-description" data-i18n="projects.talentcorp.description"></p>
-
+            <dl class="project-meta">
+              <dt data-i18n="projects.labels.problem">Problema</dt>
+              <dd data-i18n="projects.talentcorp.problem"></dd>
+              <dt data-i18n="projects.labels.role">Mi rol</dt>
+              <dd data-i18n="projects.talentcorp.role"></dd>
+            </dl>
             <div class="project-tech">
               <span class="tech-tag">SQL Server</span>
-              <span class="tech-tag">Star Schema</span>
+              <span class="tech-tag">T-SQL</span>
               <span class="tech-tag">ETL</span>
               <span class="tech-tag">SCD Tipo 2</span>
               <span class="tech-tag">Docker</span>
-              <span class="tech-tag">BI</span>
             </div>
-
-            <a href="https://github.com/HannaSalinas/Ev4-BI-RRHH-TalentCorp" target="_blank" class="project-link">
-              GitHub Repository →
-            </a>
+            <div class="project-links">
+              <a href="https://github.com/HannaSalinas/talentcorp-hr-data-warehouse" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.links.repo">Ver repositorio →</a>
+            </div>
           </article>
 
-          <!-- MONGODB PROJECT -->
+          <!-- MONGODB -->
           <article class="project-card" data-category="data">
             <div class="project-header">
-              <h3 data-i18n="projects.mongodb.title"></h3>
-              <span class="project-tag" data-i18n="projects.mongodb.tag"></span>
+              <h3 data-i18n="projects.mongodb.title">Sistema académico en MongoDB</h3>
+              <span class="project-tag" data-i18n="projects.mongodb.tag">NoSQL</span>
             </div>
-
             <p class="project-description" data-i18n="projects.mongodb.description"></p>
-
+            <dl class="project-meta">
+              <dt data-i18n="projects.labels.problem">Problema</dt>
+              <dd data-i18n="projects.mongodb.problem"></dd>
+              <dt data-i18n="projects.labels.role">Mi rol</dt>
+              <dd data-i18n="projects.mongodb.role"></dd>
+            </dl>
             <div class="project-tech">
               <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">NoSQL</span>
-              <span class="tech-tag">Aggregations</span>
-              <span class="tech-tag">Transactions</span>
+              <span class="tech-tag">mongosh</span>
+              <span class="tech-tag">JSON Schema</span>
+              <span class="tech-tag">Aggregation Framework</span>
             </div>
-
-            <a href="https://github.com/HannaSalinas/MongoDB-project" target="_blank" class="project-link">
-              GitHub Repository →
-            </a>
+            <div class="project-links">
+              <a href="https://github.com/HannaSalinas/mongodb-academic-system" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.links.repo">Ver repositorio →</a>
+            </div>
           </article>
 
-          <!-- LOCALRENT JAVA -->
+          <!-- LOCALRENT -->
           <article class="project-card" data-category="backend">
             <div class="project-header">
-              <h3 data-i18n="projects.localrent.title"></h3>
-              <span class="project-tag" data-i18n="projects.localrent.tag"></span>
+              <h3 data-i18n="projects.localrent.title">LocalRent</h3>
+              <span class="project-tag" data-i18n="projects.localrent.tag">Java · POO</span>
             </div>
-
             <p class="project-description" data-i18n="projects.localrent.description"></p>
-
+            <dl class="project-meta">
+              <dt data-i18n="projects.labels.problem">Problema</dt>
+              <dd data-i18n="projects.localrent.problem"></dd>
+              <dt data-i18n="projects.labels.role">Mi rol</dt>
+              <dd data-i18n="projects.localrent.role"></dd>
+            </dl>
             <div class="project-tech">
               <span class="tech-tag">Java</span>
               <span class="tech-tag">Singleton</span>
               <span class="tech-tag">Factory Method</span>
               <span class="tech-tag">Streams</span>
+              <span class="tech-tag">JUnit 5</span>
             </div>
-
-            <a href="https://github.com/HannaSalinas/LocalRent-POO-IUDigital" target="_blank" class="project-link">
-              GitHub Repository →
-            </a>
+            <div class="project-links">
+              <a href="https://github.com/HannaSalinas/localrent-java" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.links.repo">Ver repositorio →</a>
+            </div>
           </article>
 
-          <!-- MYSQL PROJECT -->
-          <article class="project-card" data-category="data">
+          <!-- MULTIVARIATE ANALYSIS -->
+          <article class="project-card" data-category="analysis">
+            <img class="project-image" src="assets/images/proyectos/multivariado.webp" alt="Scree plot y varianza acumulada del análisis de componentes principales" width="800" height="284" loading="lazy">
             <div class="project-header">
-              <h3 data-i18n="projects.database.title"></h3>
-              <span class="project-tag" data-i18n="projects.database.tag"></span>
+              <h3 data-i18n="projects.gimnasio.title">Análisis multivariado</h3>
+              <span class="project-tag" data-i18n="projects.gimnasio.tag">Análisis de datos</span>
             </div>
-
-            <p class="project-description" data-i18n="projects.database.description"></p>
-
-            <div class="project-tech">
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">SQL</span>
-              <span class="tech-tag">Stored Procedures</span>
-              <span class="tech-tag">Triggers</span>
-            </div>
-
-            <a href="https://github.com/HannaSalinas/mysql-database-management-system" target="_blank" class="project-link">
-              GitHub Repository →
-            </a>
-          </article>
-
-          <!-- MULTIVARIATE ANALYSIS PYTHON -->
-          <article class="project-card" data-category="datascience">
-            <div class="project-header">
-              <h3 data-i18n="projects.gimnasio.title"></h3>
-              <span class="project-tag" data-i18n="projects.gimnasio.tag"></span>
-            </div>
-
             <p class="project-description" data-i18n="projects.gimnasio.description"></p>
-
+            <dl class="project-meta">
+              <dt data-i18n="projects.labels.problem">Problema</dt>
+              <dd data-i18n="projects.gimnasio.problem"></dd>
+              <dt data-i18n="projects.labels.role">Mi rol</dt>
+              <dd data-i18n="projects.gimnasio.role"></dd>
+            </dl>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
               <span class="tech-tag">Pandas</span>
               <span class="tech-tag">Scikit-learn</span>
               <span class="tech-tag">PCA</span>
-              <span class="tech-tag">Seaborn</span>
             </div>
-
-            <a href="https://github.com/HannaSalinas/multivariate-analysis-gym-members" target="_blank" class="project-link">
-              GitHub Repository →
-            </a>
-          </article>
-
-          <!-- BINOMIAL DISTRIBUTION PYTHON -->
-          <article class="project-card" data-category="datascience">
-            <div class="project-header">
-              <h3 data-i18n="projects.binomial.title"></h3>
-              <span class="project-tag" data-i18n="projects.binomial.tag"></span>
+            <div class="project-links">
+              <a href="https://github.com/HannaSalinas/multivariate-analysis-gym-members" target="_blank" rel="noopener noreferrer" class="project-link" data-i18n="projects.links.repo">Ver repositorio →</a>
             </div>
-
-            <p class="project-description" data-i18n="projects.binomial.description"></p>
-
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">NumPy</span>
-              <span class="tech-tag">SciPy</span>
-              <span class="tech-tag">Matplotlib</span>
-            </div>
-
-            <a href="https://github.com/HannaSalinas/binomial-distribution-simulation" target="_blank" class="project-link">
-              GitHub Repository →
-            </a>
-          </article>
-
-          <!-- TERRALL FULLSTACK -->
-          <article class="project-card project-upcoming" data-category="fullstack">
-            <div class="project-header">
-              <h3 data-i18n="projects.terrall.title"></h3>
-              <span class="project-tag project-tag-progress" data-i18n="projects.terrall.tag"></span>
-            </div>
-
-            <p class="project-description" data-i18n="projects.terrall.description"></p>
-
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">Three.js</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">NestJS</span>
-              <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">PostgreSQL</span>
-            </div>
-
-            <a href="https://github.com/HannaSalinas/terrall" target="_blank" class="project-link">
-              GitHub Repository →
-            </a>
           </article>
 
         </div>
@@ -322,11 +353,11 @@
     <section id="cv" class="section cv-section">
       <div class="container cv-container">
         <div class="cv-content">
-          <h2 data-i18n="cv.title">Download My Resume</h2>
-          <p data-i18n="cv.description">Get a comprehensive overview of my experience, skills, and education.</p>
-          <a href="assets/images/Hanna_Contreras_CV.pdf" download class="btn btn-download" aria-label="Download CV as PDF">
-            <span class="download-icon">📄</span>
-            <span data-i18n="cv.button">Download CV (PDF)</span>
+          <h2 data-i18n="cv.title">Descarga mi CV</h2>
+          <p data-i18n="cv.description"></p>
+          <a href="assets/images/Hanna_Contreras_CV.pdf" download class="btn btn-download">
+            <span class="download-icon" aria-hidden="true">📄</span>
+            <span data-i18n="cv.button">Descargar CV (PDF)</span>
           </a>
         </div>
       </div>
@@ -335,23 +366,23 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
       <div class="container">
-        <h2 class="section-title" data-i18n="contact.title">Let's Connect</h2>
-        <p class="contact-subtitle" data-i18n="contact.subtitle">I'm always open to discussing new projects, opportunities, or collaborations.</p>
+        <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
+        <p class="contact-subtitle" data-i18n="contact.subtitle"></p>
         <div class="contact-grid">
-          <a href="mailto:salinashanna123@gmail.com" class="contact-card" aria-label="Send email">
-            <div class="contact-icon">📧</div>
-            <h3 data-i18n="contact.email.title">Email</h3>
+          <a href="mailto:salinashanna123@gmail.com" class="contact-card">
+            <div class="contact-icon" aria-hidden="true">📧</div>
+            <h3 data-i18n="contact.email.title">Correo</h3>
             <p>salinashanna123@gmail.com</p>
           </a>
-          <a href="https://github.com/HannaSalinas" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Visit GitHub profile">
-            <div class="contact-icon">💻</div>
-            <h3 data-i18n="contact.github.title">GitHub</h3>
+          <a href="https://github.com/HannaSalinas" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon" aria-hidden="true">💻</div>
+            <h3>GitHub</h3>
             <p>github.com/HannaSalinas</p>
           </a>
-          <a href="https://linkedin.com/in/hannacontreras" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Visit LinkedIn profile">
-            <div class="contact-icon">💼</div>
-            <h3 data-i18n="contact.linkedin.title">LinkedIn</h3>
-            <p data-i18n="contact.linkedin.text">Connect with me</p>
+          <a href="https://linkedin.com/in/hannacontreras" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon" aria-hidden="true">💼</div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/hannacontreras</p>
           </a>
         </div>
       </div>
@@ -359,16 +390,16 @@
   </main>
 
   <!-- Philosophy Button (Easter Egg) -->
-  <button id="philosophyBtn" class="philosophy-btn" aria-label="View philosophy">
-    <span>✨</span>
+  <button id="philosophyBtn" class="philosophy-btn" aria-label="Ver mi filosofía" data-i18n-aria="philosophy.button">
+    <span aria-hidden="true">✨</span>
   </button>
 
   <!-- Philosophy Modal -->
   <div id="philosophyModal" class="modal" role="dialog" aria-labelledby="philosophyTitle" aria-hidden="true">
     <div class="modal-overlay" id="modalOverlay"></div>
     <div class="modal-content">
-      <button id="closeModal" class="modal-close" aria-label="Close modal">&times;</button>
-      <h3 id="philosophyTitle" data-i18n="philosophy.title">My Philosophy</h3>
+      <button id="closeModal" class="modal-close" aria-label="Cerrar" data-i18n-aria="philosophy.close">&times;</button>
+      <h3 id="philosophyTitle" data-i18n="philosophy.title">Mi filosofía</h3>
       <p class="philosophy-text" data-i18n="philosophy.text"></p>
     </div>
   </div>
@@ -376,8 +407,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; <span id="currentYear">2026</span> Hanna Salinas. <span data-i18n="footer.rights">All rights reserved.</span></p>
-      <p class="footer-tagline" data-i18n="footer.tagline">Crafted with passion and code</p>
+      <p>&copy; <span id="currentYear">2026</span> Hanna Salinas · <span data-i18n="footer.location">Medellín, Colombia</span></p>
     </div>
   </footer>
 
@@ -385,4 +415,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
