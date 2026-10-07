@@ -1,126 +1,143 @@
 {
   "nav": {
     "logo": "HS",
+    "skip": "Skip to content",
     "about": "About",
     "skills": "Skills",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu_open": "Open menu",
+    "menu_close": "Close menu"
   },
   "hero": {
-    "greeting": "Hello, I'm",
+    "greeting": "Hi, I'm",
     "name": "Hanna Jineth Contreras Salinas",
-    "title": "Software Developer | Backend · Full-Stack · Data",
-    "subtitle": "I build REST APIs, data systems and web applications using Java, Node.js, React and SQL. Real projects on GitHub, professional architecture and modern stack.",
-    "cta_contact": "Get in Touch",
-    "cta_projects": "View Projects"
+    "title": "Software Developer · Backend & Data",
+    "subtitle": "I build data pipelines and models, databases and web applications: from a Databricks lakehouse and a SQL Server data warehouse to a 3D map of Colombia in React.",
+    "availability": "Available for remote work · Colombia",
+    "cta_contact": "Get in touch",
+    "cta_projects": "View projects"
   },
   "about": {
-    "title": "About Me",
-    "text": "Software developer with a solid foundation in backend, databases and web applications. I've built real projects ranging from a complete Data Warehouse with SQL Server and Docker to a 3D interactive platform with React and Node.js. Self-taught, organized, and passionate about creating clean and scalable solutions. Selected on merit for the Delfín Program 2026 — research internship at Universidad del Valle.",
+    "title": "About me",
+    "text": "I'm a freelance software developer on Fiverr since 2024 and a Software and Data Engineering student. I focus on backend and data engineering: database design, ETL processes, Databricks pipelines and web applications with React and Node.js. I document my projects so anyone can reproduce them, and I explain every technical decision.",
+    "experience": {
+      "title": "Experience",
+      "text": "Freelancer on Fiverr since September 2024: web apps and dashboards with React and Node.js, and Python, SQL and JavaScript tutoring."
+    },
     "education": {
       "title": "Education",
-      "text": "Software and Data Engineering — IUDigital (5th semester)"
+      "text": "Software and Data Engineering · IU Digital de Antioquia (5th semester)"
     },
     "focus": {
-      "title": "Focus Areas",
-      "text": "Backend · REST APIs · Full-Stack · Databases"
+      "title": "Focus areas",
+      "text": "Data engineering · Databases · Backend · Data analysis"
     },
     "approach": {
-      "title": "What Sets Me Apart",
-      "text": "Real projects in production · Researcher — Delfín Program 2026"
+      "title": "What sets me apart",
+      "text": "Documented, reproducible projects with automated tests where it applies."
     }
   },
   "skills": {
-    "title": "Technical Skills",
+    "title": "Technical skills",
     "languages": {
-      "title": "Programming Languages"
+      "title": "Languages"
+    },
+    "data": {
+      "title": "Data",
+      "modeling": "ETL · Star schema · SCD Type 2"
     },
     "tools": {
-      "title": "Tools & Technologies"
-    },
-    "expertise": {
-      "title": "Core Expertise",
-      "fullstack": "Full-Stack Development",
-      "database": "Database Design",
-      "oop": "Object-Oriented Programming",
-      "web": "REST APIs & Microservices"
+      "title": "Development & tools"
     },
     "languages_spoken": {
-      "title": "Languages",
-      "spanish": "Spanish (Native)",
-      "english": "English (B1-B2 · Fluent technical reading)"
+      "title": "Spoken languages",
+      "spanish": "Spanish (native)",
+      "english": "English (B1–B2, fluent technical reading)"
+    },
+    "learning": {
+      "title": "Learning"
     }
   },
   "projects": {
-    "title": "Featured Projects",
+    "title": "Featured projects",
     "filters": {
       "all": "All",
-      "data": "Data & Databases",
+      "data": "Data",
+      "web": "Web",
       "backend": "Backend & OOP",
-      "datascience": "Data Science",
-      "fullstack": "Full-Stack"
+      "analysis": "Analysis"
     },
-    "talentcorp": {
-      "title": "BI TalentCorp — HR Data Warehouse",
-      "tag": "Business Intelligence",
-      "description": "Full Business Intelligence system for TalentCorp S.A.: OLTP database, ETL with SCD Type 2, dimensional Data Warehouse, and 15 strategic HR KPIs. Includes data governance, role-based security, and Colombian holiday calendar."
+    "labels": {
+      "problem": "Problem",
+      "role": "My role"
     },
-    "mongodb": {
-      "title": "Academic System with MongoDB",
-      "tag": "Academic Project",
-      "description": "Complete academic management system in MongoDB with JSON schema validation, CRUD operations, transactions, advanced aggregations and change streams. Includes comprehensive technical documentation."
-    },
-    "localrent": {
-      "title": "LocalRent — Rental Management System",
-      "tag": "Advanced Java OOP",
-      "description": "Rental management system in Java featuring Singleton and Factory Method design patterns, functional programming with Streams and lambdas, and custom exception handling."
-    },
-    "database": {
-      "title": "MySQL Database Management System",
-      "tag": "Academic Project",
-      "description": "MySQL database system with CRUD stored procedures, user-defined functions, and audit triggers for change tracking."
-    },
-    "gimnasio": {
-      "title": "Multivariate Analysis — Gym Members",
-      "tag": "Data Science",
-      "description": "Exploratory analysis, correlation matrix and PCA on 970 real records with 16 variables. Includes data cleaning, full descriptive statistics, heatmaps and biplot with dimensional reduction to 4 components."
-    },
-    "binomial": {
-      "title": "Binomial Distribution Simulation",
-      "tag": "Data Science",
-      "description": "Industrial assembly process simulation using binomial distribution in Python. Covers descriptive statistics, theoretical probabilities with PMF and CDF, comparative visualization, and Chi² goodness-of-fit test."
+    "links": {
+      "demo": "View demo →",
+      "repo": "View repository →"
     },
     "terrall": {
-      "title": "Terrall — 3D Interactive Platform of Colombia",
-      "tag": "Actively In Development",
-      "description": "Fullstack web platform centralizing tourism, transport, education and economy of Colombia through a 3D interactive map. Modular architecture designed to scale. Stack: React + Three.js · Node.js + NestJS · PostgreSQL + MongoDB."
+      "title": "Terrall",
+      "tag": "In progress",
+      "description": "Interactive 3D map of Colombia: pick a department and see its data in a side panel, with real tourism data from the National Tourism Registry.",
+      "problem": "Territorial information about Colombia is scattered across many sources and hard to explore by region.",
+      "role": "Personal project: design, React and Three.js frontend, open-data ingestion and deployment."
+    },
+    "wanderbricks": {
+      "title": "Wanderbricks Lakehouse",
+      "tag": "Team project",
+      "description": "Medallion lakehouse (bronze, silver and gold) on Databricks, with Unity Catalog governance, an automated Job and a join-optimization analysis.",
+      "problem": "Marketing needs to know which devices and channels end in confirmed, paid bookings.",
+      "role": "Bronze layer, Delta Lake guarantees, lineage, two-task Job and the optimization baseline, in a team of three."
+    },
+    "talentcorp": {
+      "title": "TalentCorp HR Data Warehouse",
+      "tag": "Business Intelligence",
+      "description": "Operational database, ETL with stored procedures and a star-schema data warehouse with 15 HR KPIs and 15 data-quality checks.",
+      "problem": "A company with offices in several countries needed reliable HR metrics from its operational database.",
+      "role": "Solo project: modeling, ETL with SCD Type 2, security (Dynamic Data Masking and Row-Level Security) and analytical queries."
+    },
+    "mongodb": {
+      "title": "Academic system in MongoDB",
+      "tag": "NoSQL",
+      "description": "Academic management with JSON Schema validation, CRUD, four multi-document transactions with rollback and five aggregation-pipeline reports.",
+      "problem": "Record enrollments, grades and graduations without leaving inconsistent data across collections.",
+      "role": "Solo project: document modeling, validations, transactions and reports."
+    },
+    "localrent": {
+      "title": "LocalRent",
+      "tag": "Java · OOP",
+      "description": "Console app to manage properties, leases and payments, with overdue detection, Singleton and Factory Method patterns and Stream-based queries.",
+      "problem": "Manage rentals of shops and apartments and detect overdue leases.",
+      "role": "Solo project: object-oriented design, 25 JUnit 5 tests and continuous integration."
+    },
+    "gimnasio": {
+      "title": "Multivariate analysis",
+      "tag": "Data analysis",
+      "description": "Exploratory analysis, correlations and PCA on 961 gym members and 16 variables; four components retain 64.3% of the variance.",
+      "problem": "Understand which physical and training variables are related and whether they can be summarized in a few dimensions.",
+      "role": "Solo project: data cleaning, descriptive statistics, visualizations and PCA interpretation."
     }
   },
   "cv": {
-    "title": "Download My Resume",
-    "description": "Get a comprehensive overview of my experience, skills, and education.",
-    "button": "Download CV (PDF)"
+    "title": "Download my resume",
+    "description": "Experience, skills, projects and education on one page (in Spanish).",
+    "button": "Download resume (PDF)"
   },
   "contact": {
-    "title": "Let's Connect",
-    "subtitle": "Always open to new projects, opportunities and collaborations.",
+    "title": "Contact",
+    "subtitle": "Reach out for freelance projects, remote job opportunities or collaborations.",
     "email": {
       "title": "Email"
-    },
-    "github": {
-      "title": "GitHub"
-    },
-    "linkedin": {
-      "title": "LinkedIn",
-      "text": "Connect with me"
     }
   },
   "philosophy": {
-    "title": "My Philosophy",
+    "button": "View my philosophy",
+    "close": "Close",
+    "title": "My philosophy",
     "text": "I believe in smooth processes, in the power of simplicity, and that technology can also be poetry. Every line of code is an opportunity to create something meaningful and elegant."
   },
   "footer": {
-    "rights": "All rights reserved.",
-    "tagline": "Crafted with passion and code"
+    "location": "Medellín, Colombia"
   }
 }

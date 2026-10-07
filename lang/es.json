@@ -1,126 +1,143 @@
 {
   "nav": {
     "logo": "HS",
+    "skip": "Saltar al contenido",
     "about": "Sobre mí",
     "skills": "Habilidades",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "menu_open": "Abrir menú",
+    "menu_close": "Cerrar menú"
   },
   "hero": {
     "greeting": "Hola, soy",
     "name": "Hanna Jineth Contreras Salinas",
-    "title": "Software Developer | Backend · Full-Stack · Data",
-    "subtitle": "Desarrollo APIs REST, sistemas de datos y aplicaciones web con Java, Node.js, React y SQL. Proyectos reales en GitHub, arquitectura profesional y stack moderno.",
+    "title": "Desarrolladora de software · Backend y datos",
+    "subtitle": "Construyo pipelines y modelos de datos, bases de datos y aplicaciones web: desde un lakehouse en Databricks y un data warehouse en SQL Server hasta un mapa 3D de Colombia en React.",
+    "availability": "Disponible para trabajo remoto · Colombia",
     "cta_contact": "Contáctame",
-    "cta_projects": "Ver Proyectos"
+    "cta_projects": "Ver proyectos"
   },
   "about": {
     "title": "Sobre mí",
-    "text": "Desarrolladora de software con base sólida en backend, bases de datos y aplicaciones web. He construido proyectos reales que van desde un Data Warehouse completo con SQL Server y Docker hasta una plataforma interactiva 3D con React y Node.js. Soy autodidacta, organizada y apasionada por crear soluciones limpias y escalables. Seleccionada por mérito para el Programa Delfín 2026 — estancia de investigación en la Universidad del Valle.",
+    "text": "Soy desarrolladora de software freelance en Fiverr desde 2024 y estudiante de Ingeniería de Software y Datos. Me enfoco en backend e ingeniería de datos: diseño de bases de datos, procesos ETL, pipelines en Databricks y aplicaciones web con React y Node.js. Documento mis proyectos para que cualquiera pueda reproducirlos y justifico cada decisión técnica.",
+    "experience": {
+      "title": "Experiencia",
+      "text": "Freelance en Fiverr desde septiembre de 2024: aplicaciones web y dashboards con React y Node.js, y clases de Python, SQL y JavaScript."
+    },
     "education": {
       "title": "Formación",
-      "text": "Ingeniería de Software y Datos — IUDigital (5to semestre)"
+      "text": "Ingeniería de Software y Datos · IU Digital de Antioquia (5.º semestre)"
     },
     "focus": {
-      "title": "Áreas de Enfoque",
-      "text": "Backend · APIs REST · Full-Stack · Bases de Datos"
+      "title": "Áreas de enfoque",
+      "text": "Ingeniería de datos · Bases de datos · Backend · Análisis de datos"
     },
     "approach": {
       "title": "Diferencial",
-      "text": "Proyectos reales en producción · Investigadora Programa Delfín 2026"
+      "text": "Proyectos documentados, reproducibles y con pruebas automatizadas donde aplica."
     }
   },
   "skills": {
-    "title": "Habilidades Técnicas",
+    "title": "Habilidades técnicas",
     "languages": {
-      "title": "Lenguajes de Programación"
+      "title": "Lenguajes"
+    },
+    "data": {
+      "title": "Datos",
+      "modeling": "ETL · Modelo estrella · SCD Tipo 2"
     },
     "tools": {
-      "title": "Herramientas y Tecnologías"
-    },
-    "expertise": {
-      "title": "Experiencia Principal",
-      "fullstack": "Desarrollo Full-Stack",
-      "database": "Diseño de Bases de Datos",
-      "oop": "Programación Orientada a Objetos",
-      "web": "APIs REST & Microservicios"
+      "title": "Desarrollo y herramientas"
     },
     "languages_spoken": {
       "title": "Idiomas",
-      "spanish": "Español (Nativo)",
-      "english": "Inglés (B1-B2 · Lectura técnica fluida)"
+      "spanish": "Español (nativo)",
+      "english": "Inglés (B1–B2, lectura técnica fluida)"
+    },
+    "learning": {
+      "title": "Aprendiendo"
     }
   },
   "projects": {
-    "title": "Proyectos Destacados",
+    "title": "Proyectos destacados",
     "filters": {
       "all": "Todos",
-      "data": "Datos y BD",
-      "backend": "Backend & OOP",
-      "datascience": "Data Science",
-      "fullstack": "Full-Stack"
+      "data": "Datos",
+      "web": "Web",
+      "backend": "Backend y POO",
+      "analysis": "Análisis"
     },
-    "talentcorp": {
-      "title": "BI TalentCorp — Data Warehouse RRHH",
-      "tag": "Business Intelligence",
-      "description": "Sistema completo de Business Intelligence para TalentCorp S.A.: base de datos OLTP, ETL con SCD Tipo 2, Data Warehouse dimensional y 15 KPIs estratégicos de RRHH. Incluye gobernanza de datos, seguridad por roles y calendario con festivos colombianos."
+    "labels": {
+      "problem": "Problema",
+      "role": "Mi rol"
     },
-    "mongodb": {
-      "title": "Sistema Académico con MongoDB",
-      "tag": "Proyecto Académico",
-      "description": "Sistema completo de gestión académica en MongoDB con validación de esquemas JSON, operaciones CRUD, transacciones, agregaciones avanzadas y change streams. Incluye documentación técnica completa."
-    },
-    "localrent": {
-      "title": "LocalRent — Sistema de Arriendos",
-      "tag": "Java OOP Avanzado",
-      "description": "Sistema de gestión de arriendos en Java con patrones de diseño Singleton y Factory Method, programación funcional con Streams y lambdas, y manejo de excepciones personalizadas."
-    },
-    "database": {
-      "title": "MySQL Database Management System",
-      "tag": "Proyecto Académico",
-      "description": "Sistema de base de datos en MySQL con procedimientos almacenados CRUD, funciones definidas por el usuario y triggers de auditoría para seguimiento de cambios."
-    },
-    "gimnasio": {
-      "title": "Análisis Multivariado — Miembros Gimnasio",
-      "tag": "Data Science",
-      "description": "Análisis exploratorio, matriz de correlación y PCA sobre 970 registros reales con 16 variables. Incluye limpieza de datos, estadísticas descriptivas completas, heatmaps y biplot con reducción dimensional a 4 componentes."
-    },
-    "binomial": {
-      "title": "Simulación Distribución Binomial",
-      "tag": "Data Science",
-      "description": "Simulación de proceso de ensamblaje industrial con distribución binomial en Python. Incluye estadísticas descriptivas, probabilidades teóricas con PMF y CDF, visualización comparativa y prueba de bondad de ajuste Chi²."
+    "links": {
+      "demo": "Ver demo →",
+      "repo": "Ver repositorio →"
     },
     "terrall": {
-      "title": "Terrall — Plataforma Interactiva 3D de Colombia",
-      "tag": "En Desarrollo Activo",
-      "description": "Plataforma web fullstack que centraliza turismo, transporte, educación y economía de Colombia mediante un mapa 3D interactivo. Arquitectura modular diseñada para escalar. Stack: React + Three.js · Node.js + NestJS · PostgreSQL + MongoDB."
+      "title": "Terrall",
+      "tag": "En desarrollo",
+      "description": "Mapa 3D interactivo de Colombia: eliges un departamento y ves sus datos en un panel, con datos reales de turismo del Registro Nacional de Turismo.",
+      "problem": "La información territorial de Colombia está dispersa en muchas fuentes y es difícil de explorar por región.",
+      "role": "Proyecto propio: diseño, desarrollo del frontend en React y Three.js, ingesta de datos abiertos y despliegue."
+    },
+    "wanderbricks": {
+      "title": "Wanderbricks Lakehouse",
+      "tag": "Proyecto en equipo",
+      "description": "Lakehouse con arquitectura medallón (bronce, plata y oro) en Databricks, con gobierno en Unity Catalog, un Job automatizado y análisis de optimización de joins.",
+      "problem": "Marketing necesita saber qué dispositivos y canales terminan en reservas confirmadas y pagadas.",
+      "role": "Capa bronce, garantías de Delta Lake, linaje, Job de dos tareas y línea base de la optimización, en un equipo de tres personas."
+    },
+    "talentcorp": {
+      "title": "TalentCorp HR Data Warehouse",
+      "tag": "Business Intelligence",
+      "description": "Base de datos operacional, ETL con procedimientos almacenados y data warehouse en modelo estrella con 15 KPIs de recursos humanos y 15 validaciones de calidad.",
+      "problem": "Una empresa con sedes en varios países necesitaba indicadores de RRHH confiables a partir de su base operacional.",
+      "role": "Proyecto individual: modelado, ETL con SCD Tipo 2, seguridad (Dynamic Data Masking y Row-Level Security) y consultas analíticas."
+    },
+    "mongodb": {
+      "title": "Sistema académico en MongoDB",
+      "tag": "NoSQL",
+      "description": "Gestión académica con validación JSON Schema, CRUD, cuatro transacciones multi-documento con rollback y cinco reportes con pipelines de agregación.",
+      "problem": "Registrar inscripciones, notas y graduaciones sin dejar datos inconsistentes entre colecciones.",
+      "role": "Proyecto individual: modelado de documentos, validaciones, transacciones y reportes."
+    },
+    "localrent": {
+      "title": "LocalRent",
+      "tag": "Java · POO",
+      "description": "Aplicación de consola para gestionar inmuebles, contratos y pagos, con detección de mora, patrones Singleton y Factory Method y consultas con Streams.",
+      "problem": "Administrar arriendos de locales y apartamentos y detectar contratos en mora.",
+      "role": "Proyecto individual: diseño orientado a objetos, 25 pruebas con JUnit 5 e integración continua."
+    },
+    "gimnasio": {
+      "title": "Análisis multivariado",
+      "tag": "Análisis de datos",
+      "description": "Análisis exploratorio, correlaciones y PCA sobre 961 miembros de gimnasio y 16 variables; cuatro componentes retienen el 64,3 % de la varianza.",
+      "problem": "Entender qué variables físicas y de entrenamiento se relacionan y si se pueden resumir en pocas dimensiones.",
+      "role": "Proyecto individual: limpieza, estadística descriptiva, visualizaciones e interpretación del PCA."
     }
   },
   "cv": {
-    "title": "Descarga mi Currículum",
-    "description": "Obtén una visión completa de mi experiencia, habilidades y formación.",
+    "title": "Descarga mi CV",
+    "description": "Experiencia, habilidades, proyectos y formación en una página.",
     "button": "Descargar CV (PDF)"
   },
   "contact": {
-    "title": "Conectemos",
-    "subtitle": "Siempre abierta a nuevos proyectos, oportunidades y colaboraciones.",
+    "title": "Contacto",
+    "subtitle": "Escríbeme para proyectos freelance, oportunidades de trabajo remoto o colaboraciones.",
     "email": {
-      "title": "Email"
-    },
-    "github": {
-      "title": "GitHub"
-    },
-    "linkedin": {
-      "title": "LinkedIn",
-      "text": "Conecta conmigo"
+      "title": "Correo"
     }
   },
   "philosophy": {
-    "title": "Mi Filosofía",
-    "text": "Creo en los procesos suaves, en el poder de lo simple, y en que la tecnología también puede ser poesía. Cada línea de código es una oportunidad para crear algo significativo y elegante."
+    "button": "Ver mi filosofía",
+    "close": "Cerrar",
+    "title": "Mi filosofía",
+    "text": "Creo en los procesos suaves, en el poder de lo simple y en que la tecnología también puede ser poesía. Cada línea de código es una oportunidad para crear algo significativo y elegante."
   },
   "footer": {
-    "rights": "Todos los derechos reservados.",
-    "tagline": "Creado con pasión y código"
+    "location": "Medellín, Colombia"
   }
 }
