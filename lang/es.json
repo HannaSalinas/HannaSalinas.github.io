@@ -13,14 +13,14 @@
     "greeting": "Hola, soy",
     "name": "Hanna Jineth Contreras Salinas",
     "title": "Desarrolladora de software · Backend y datos",
-    "subtitle": "Construyo pipelines y modelos de datos, bases de datos y aplicaciones web: desde un lakehouse en Databricks y un data warehouse en SQL Server hasta un mapa 3D de Colombia en React.",
+    "subtitle": "Construyo pipelines de datos y el backend que los sostiene.",
     "availability": "Disponible para trabajo remoto · Colombia",
     "cta_contact": "Contáctame",
     "cta_projects": "Ver proyectos"
   },
   "about": {
     "title": "Sobre mí",
-    "text": "Soy desarrolladora de software freelance en Fiverr desde 2024 y estudiante de Ingeniería de Software y Datos. Me enfoco en backend e ingeniería de datos: diseño de bases de datos, procesos ETL, pipelines en Databricks y aplicaciones web con React y Node.js. Documento mis proyectos para que cualquiera pueda reproducirlos y justifico cada decisión técnica.",
+    "text": "Soy desarrolladora de software y trabajo como freelance en Fiverr desde 2024: hago aplicaciones web y dashboards para clientes y doy clases de Python, SQL y JavaScript. Mientras termino Ingeniería de Software y Datos en IU Digital, me estoy especializando en backend e ingeniería de datos, y también disfruto el frontend con React.",
     "experience": {
       "title": "Experiencia",
       "text": "Freelance en Fiverr desde septiembre de 2024: aplicaciones web y dashboards con React y Node.js, y clases de Python, SQL y JavaScript."
@@ -31,11 +31,7 @@
     },
     "focus": {
       "title": "Áreas de enfoque",
-      "text": "Ingeniería de datos · Bases de datos · Backend · Análisis de datos"
-    },
-    "approach": {
-      "title": "Diferencial",
-      "text": "Proyectos documentados, reproducibles y con pruebas automatizadas donde aplica."
+      "text": "Backend · Ingeniería de datos · Bases de datos · Frontend con React"
     }
   },
   "skills": {
@@ -56,7 +52,8 @@
       "english": "Inglés (B1–B2, lectura técnica fluida)"
     },
     "learning": {
-      "title": "Aprendiendo"
+      "title": "Aprendiendo",
+      "deploy": "Despliegue en la nube (AWS)"
     }
   },
   "projects": {
@@ -79,9 +76,9 @@
     "terrall": {
       "title": "Terrall",
       "tag": "En desarrollo",
-      "description": "Mapa 3D interactivo de Colombia: eliges un departamento y ves sus datos en un panel, con datos reales de turismo del Registro Nacional de Turismo.",
+      "description": "Mapa 3D interactivo de Colombia: eliges un departamento y ves sus datos en un panel, con datos reales de turismo del Registro Nacional de Turismo y una API REST propia.",
       "problem": "La información territorial de Colombia está dispersa en muchas fuentes y es difícil de explorar por región.",
-      "role": "Proyecto propio: diseño, desarrollo del frontend en React y Three.js, ingesta de datos abiertos y despliegue."
+      "role": "Proyecto propio: diseño, frontend en React y Three.js, API REST con NestJS y PostgreSQL (con pruebas e integración continua) e ingesta de datos abiertos. La API funciona en local y con Docker; aún no está desplegada."
     },
     "wanderbricks": {
       "title": "Wanderbricks Lakehouse",
