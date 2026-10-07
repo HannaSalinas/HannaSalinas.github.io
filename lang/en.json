@@ -71,14 +71,15 @@
     },
     "links": {
       "demo": "View demo →",
-      "repo": "View repository →"
+      "repo": "View repository →",
+      "api": "View API →"
     },
     "terrall": {
       "title": "Terrall",
       "tag": "In progress",
       "description": "Interactive 3D map of Colombia: pick a department and see its data in a side panel, with real tourism data from the National Tourism Registry and its own REST API.",
       "problem": "Territorial information about Colombia is scattered across many sources and hard to explore by region.",
-      "role": "Personal project: design, React and Three.js frontend, REST API with NestJS and PostgreSQL (with tests and continuous integration) and open-data ingestion. The API runs locally and with Docker; it isn't deployed yet."
+      "role": "Personal project: design, React and Three.js frontend, REST API with NestJS and PostgreSQL (with tests and continuous integration, deployed on Render) and open-data ingestion."
     },
     "wanderbricks": {
       "title": "Wanderbricks Lakehouse",
