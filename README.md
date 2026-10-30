@@ -1,6 +1,6 @@
 # Portafolio · Hanna Salinas
 
-Sitio personal de Hanna Salinas, desarrolladora de software. Hace apps web del frontend a los datos y su meta es ser full-stack. Reúne sus proyectos, experiencia y CV, en español e inglés.
+Sitio personal de Hanna Salinas, desarrolladora de software. Se enfoca en backend y datos, y su meta es ser full-stack. Reúne sus proyectos, experiencia y CV, en español e inglés.
 
 **[hannasalinas.github.io](https://hannasalinas.github.io/)**
 
@@ -11,6 +11,7 @@ Sitio personal de Hanna Salinas, desarrolladora de software. Hace apps web del f
 - **Portada 3D** hecha con Three.js: un cuarto con escritorio, monitor que escribe código, letrero de neón y destellos rojos. El personaje está modelado a partir de una foto real; saluda al entrar y al hacer clic sobre él.
 - **Sobre mí** con experiencia, estudios y herramientas.
 - **Proyectos**: Terrall, Wanderbricks Lakehouse, TalentCorp HR Data Warehouse y análisis multivariado, más el sistema académico en MongoDB, LocalRent y la API de Terrall.
+- **Open source**: contribuciones fusionadas en LibreDB Studio.
 - **Contacto** y CV descargable en PDF.
 
 ![Sección de proyectos](docs/capturas/proyectos.webp)
@@ -23,7 +24,7 @@ Sitio personal de Hanna Salinas, desarrolladora de software. Hace apps web del f
 - Personaje 3D construido solo con figuras básicas (`js/personaje.js`): respira, parpadea, sigue el cursor con la mirada y saluda.
 - Bilingüe (ES/EN): se elige según el idioma del navegador y recuerda la elección.
 - Si el navegador no puede mostrar 3D, la portada muestra una imagen del cuarto.
-- Respeta la preferencia de reducir movimiento del sistema.
+- Respeta la preferencia de reducir movimiento del sistema, y el contenido se ve aunque la animación o JavaScript fallen.
 - Etiquetas Open Graph para la vista previa al compartir en LinkedIn o WhatsApp.
 
 ## Estructura
@@ -55,7 +56,7 @@ El sitio se publica con GitHub Pages desde la rama `main`.
 ## Contacto
 
 - Correo: salinashanna123@gmail.com
-- LinkedIn: [linkedin.com/in/hannacontreras](https://linkedin.com/in/hannacontreras)
+- LinkedIn: [linkedin.com/in/hanna-salinas](https://www.linkedin.com/in/hanna-salinas)
 - GitHub: [@HannaSalinas](https://github.com/HannaSalinas)
 
 ## Licencia
