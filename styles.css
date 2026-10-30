@@ -93,8 +93,9 @@ h2 .serif { color:var(--rojo); }
 .destello::before { content:''; position:absolute; inset:0; background:var(--rojo); clip-path:polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); filter:drop-shadow(0 0 4px var(--rojo)); }
 @keyframes brillar { from { opacity:1; transform:scale(1) rotate(0); } to { opacity:0; transform:scale(0) rotate(90deg) translateY(16px); } }
 
-.aparece { opacity:0; transform:translateY(30px) scale(.98); transition:opacity .8s, transform .8s; }
-.aparece.visible { opacity:1; transform:none; }
+/* solo se ocultan si main.js agregó .anim; sin JavaScript todo queda visible */
+.anim .aparece { opacity:0; transform:translateY(30px) scale(.98); transition:opacity .8s, transform .8s; }
+.anim .aparece.visible { opacity:1; transform:none; }
 .fallo { position:absolute; inset:auto 6vw 80px auto; z-index:2; color:var(--suave); font-size:14px; display:none; }
 
 @media (max-width: 820px) {
@@ -110,7 +111,7 @@ h2 .serif { color:var(--rojo); }
   .proyectos { grid-template-columns:1fr; }
   .contacto { padding:110px 16px; }
 }
-@media (prefers-reduced-motion: reduce) { .aparece { opacity:1; transform:none; } .cursor { animation:none; } html { scroll-behavior:auto; } }
+@media (prefers-reduced-motion: reduce) { .anim .aparece { opacity:1; transform:none; transition:none; } .cursor { animation:none; } html { scroll-behavior:auto; } }
 .saltar { position:absolute; left:16px; top:-60px; background:var(--rojo); color:#fff; padding:10px 16px; border-radius:10px; z-index:100; text-decoration:none; }
 .saltar:focus { top:16px; }
 a:focus-visible, button:focus-visible { outline:2px solid var(--rojo); outline-offset:3px; }

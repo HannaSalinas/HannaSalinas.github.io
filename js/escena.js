@@ -258,6 +258,13 @@ function cuadro() {
     burbuja.classList.add('ver');
   } else burbuja.classList.remove('ver');
   render.render(escena, camara);
-  requestAnimationFrame(cuadro);
+  if (enPantalla) requestAnimationFrame(cuadro);
 }
+// el cuarto solo se dibuja mientras se ve; así no le quita fuerza al resto de la página
+let enPantalla = true;
+new IntersectionObserver(([e]) => {
+  const antes = enPantalla;
+  enPantalla = e.isIntersecting;
+  if (enPantalla && !antes) requestAnimationFrame(cuadro);
+}).observe(cont);
 cuadro();
